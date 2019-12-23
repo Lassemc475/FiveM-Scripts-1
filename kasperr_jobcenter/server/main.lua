@@ -30,13 +30,15 @@ AddEventHandler("kasperr_jobcenter:selectJob", function(group)
     blacklisted = true
     end
   end
-  if blacklisted = false then
+  if blacklisted == false then
     local user_id = vRP.getUserId({source})
     vRP.addUserGroup({user_id,group})
     print("Ikke bugger")
     TriggerClientEvent("kasperr_jobcenter:notification", source, Config.Language.SelectedJob .. " " .. group)
+    blacklisted = false
   else
     print("Bugger")
     TriggerClientEvent("kasperr_jobcenter:notification", source, "Nej. Stop med det der")
+    blacklisted = false
   end
 end)
