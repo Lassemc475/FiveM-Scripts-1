@@ -1,10 +1,20 @@
+
+# Dette er en opdateret kopi af Kasper Rasmussens scripts
+Eftersom at mange server, heriblandt DitCommunity, Sky-Universe & Daily Network gør brug af nogle af disse filer, vælger jeg at opdatere enkelte af dem, så de ikke længere indeholder sikkerhedsfejl.
+
+Dette indebære at man skal rette nogle ting selv også.
+
+## kasperr_jobcenter
+
+server/main.lua er skrevet om og skal opdateres med en blacklist over grupper folk *ikke* må få.
+
 # FiveM Scripts - vRP
 
-Disse projekter har været under udvikling i et stykke tid, og et par stykker har været afprøvet på serveren DanDream, som jeg har valgt at forlade. 
+Disse projekter har været under udvikling i et stykke tid, og et par stykker har været afprøvet på serveren DanDream, som jeg har valgt at forlade.
 
-Da jeg håber nogen kan bruge dem, bliver de nu delt her, og håber i tager godt imod dem. 
+Da jeg håber nogen kan bruge dem, bliver de nu delt her, og håber i tager godt imod dem.
 
-Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en officiel server med mange spillere, og derfor sætter jeg stor pris på beskeder med eventuelle fejl, mangler og lignende. 
+Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en officiel server med mange spillere, og derfor sætter jeg stor pris på beskeder med eventuelle fejl, mangler og lignende.
 
 ### Discord: https://discord.gg/uPQfJuu
 
@@ -40,13 +50,13 @@ Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en offi
 
 ## Dokumentation:
 
-Alle projekter har en inkluderet config fil, hvor der er mulighed for at gøre oplevelsen for jeres spillere mere personligt. 
+Alle projekter har en inkluderet config fil, hvor der er mulighed for at gøre oplevelsen for jeres spillere mere personligt.
 Her vil i se en fil: `config.lua`, som primært er configs til diverse Lua filer.
 
 Derudover vil der i visse tilfælde være en fil: `configNui.js`, hvor det omhandler den medfølgende NUI menu (lavet i HTML, CSS & JavaScript).
 
 #### Progress Handler
-Jeg har udarbejdet en "progress handler", som er beregnet til at køre et ønsket event efter kort tid. 
+Jeg har udarbejdet en "progress handler", som er beregnet til at køre et ønsket event efter kort tid.
 
 Det kan være smart at benytte den, hvis man ikke ønsker, at folk kan indtage mad, drikke eller samle genstande op meget hurtigt, eller man generalt ønsker at spilleren skal vente et par sekunder for at kunne fortsætte.
 
@@ -65,18 +75,18 @@ Event: Navnet på det event som skal køres
 Args: Eventuelle variabler som man ønsker at sende med hen til det event, man ønsker at køre
 
 ```lua
-TriggerClientEvent("kasperr_progress_handler:open", "My title", 5000, "client", "event:name", {"random string"}) 
+TriggerClientEvent("kasperr_progress_handler:open", "My title", 5000, "client", "event:name", {"random string"})
 ```
 
 ## Retningslinjer
 
 Vigtig: man må gerne redigere i mine scripts, men IKKE fjerne mit navn eller "credits". Det betyder også, at man ikke må fjerne mit navn fra mapperne.
-Hvis man gør brug af følgende udgivelser, skal man nævne udgiveren (Kasper Rasmussen) ved alle forhåndsvisninger (videoer, billeder eller andet materiale som udgives til spillere/brugere). 
+Hvis man gør brug af følgende udgivelser, skal man nævne udgiveren (Kasper Rasmussen) ved alle forhåndsvisninger (videoer, billeder eller andet materiale som udgives til spillere/brugere).
 Man må benytte og redigere udgivelserne, men aldrig videregive dem, sælge eller udgive sig for at være udgiveren.
 
 Hvis man er i tvivl om retningslinjerne eller har spørgsmål, skal man kontakt Kasper Rasmussen - find kontaktoplysninger i bunden af siden eller på https://www.kasper-rasmussen.dk/
 
-## Kontakt 
+## Kontakt
 
 Steam: https://steamcommunity.com/id/kasperrasmussen/
 
